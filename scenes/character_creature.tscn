@@ -5,9 +5,9 @@
 [ext_resource type="Script" path="res://scripts/AnimateUV.cs" id="5_8d3hg"]
 [ext_resource type="Texture2D" uid="uid://bropc40qhtdyu" path="res://textures/character.png" id="6_45u3l"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jtfa0"]
-radius = 0.2
-height = 0.5
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_3rgaj"]
+height = 4.0
+radius = 0.25
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_758pi"]
 transparency = 1
@@ -24,8 +24,8 @@ script = ExtResource("1_g72hc")
 Splatter = ExtResource("2_8ijvk")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-shape = SubResource("CapsuleShape3D_jtfa0")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("CylinderShape3D_3rgaj")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0.473428, 0)

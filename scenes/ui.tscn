@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://dti8i04eftgxl"]
+[gd_scene load_steps=9 format=3 uid="uid://dti8i04eftgxl"]
 
 [ext_resource type="Script" path="res://scripts/ScoreLabel.cs" id="1_e8l4j"]
 [ext_resource type="Script" path="res://scripts/UserInterface.cs" id="1_gy0e2"]
 [ext_resource type="Script" path="res://scripts/Timer.cs" id="2_dtjaf"]
 [ext_resource type="Script" path="res://scripts/ButtonPlay.cs" id="4_3anfr"]
 [ext_resource type="Script" path="res://scripts/ButtonMainMenu.cs" id="5_ad74j"]
+[ext_resource type="Texture2D" uid="uid://dlksvr7qgy3t0" path="res://textures/logo.png" id="5_f5t0v"]
+[ext_resource type="Script" path="res://scripts/ButtonCredits.cs" id="6_4dch3"]
+[ext_resource type="Script" path="res://scripts/ButtonQuit.cs" id="7_1l4pq"]
 
-[node name="UI" type="Control" node_paths=PackedStringArray("IngameView", "MainMenuView", "GameOverView", "GameOverScoreboard")]
+[node name="UI" type="Control" node_paths=PackedStringArray("IngameView", "MainMenuView", "GameOverView", "CreditsView", "GameOverScoreboard")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,6 +20,7 @@ script = ExtResource("1_gy0e2")
 IngameView = NodePath("Ingame")
 MainMenuView = NodePath("MainMenu")
 GameOverView = NodePath("GameOver")
+CreditsView = NodePath("Credits")
 GameOverScoreboard = NodePath("GameOver/CenterPanel/FinalScore")
 
 [node name="Ingame" type="Control" parent="."]
@@ -67,6 +71,14 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(9.62615e-07, 0, 0.491839, 1)
 
+[node name="TextureRect" type="TextureRect" parent="MainMenu"]
+layout_mode = 0
+offset_left = 304.0
+offset_top = 27.0
+offset_right = 816.0
+offset_bottom = 283.0
+texture = ExtResource("5_f5t0v")
+
 [node name="CenterPanel" type="Control" parent="MainMenu"]
 layout_mode = 1
 anchors_preset = 8
@@ -93,6 +105,33 @@ grow_horizontal = 2
 text = "  Play  "
 script = ExtResource("4_3anfr")
 UI = NodePath("../../..")
+
+[node name="ButtonCredits" type="Button" parent="MainMenu/CenterPanel" node_paths=PackedStringArray("UI")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.5
+offset_top = 40.0
+offset_right = 28.5
+offset_bottom = 71.0
+grow_horizontal = 2
+text = "  Credits  "
+script = ExtResource("6_4dch3")
+UI = NodePath("../../..")
+
+[node name="ButtonQuit" type="Button" parent="MainMenu/CenterPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -29.5
+offset_top = 80.0
+offset_right = 29.5
+offset_bottom = 111.0
+grow_horizontal = 2
+text = "  Quit  "
+script = ExtResource("7_1l4pq")
 
 [node name="GameOver" type="Control" parent="."]
 visible = false
@@ -154,3 +193,64 @@ text = "Final Score:
 High Score:
 -"
 horizontal_alignment = 1
+
+[node name="Credits" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Credits"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(9.62615e-07, 0, 0.491839, 1)
+
+[node name="CreditsText" type="Label" parent="Credits"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 127.0
+grow_horizontal = 2
+text = "
+Credits:
+________________
+
+
+Lorenz Saß:
+- Gameplay Design
+- Level Design
+- Shader Code
+
+Jeremias König:
+- Gameplay Design
+- UI Graphics
+- Sprites (Player & Creatures)
+- Game Logic
+
+Kenney (Asset Jesus):
+- Environment 3D Assets"
+horizontal_alignment = 1
+
+[node name="ButtonMainMenu" type="Button" parent="Credits" node_paths=PackedStringArray("UI")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -151.0
+offset_top = -51.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "  Back to Menu  "
+script = ExtResource("5_ad74j")
+UI = NodePath("../..")

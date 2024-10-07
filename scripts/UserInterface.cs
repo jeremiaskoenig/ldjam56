@@ -8,7 +8,9 @@ public partial class UserInterface : Control
     {
         Ingame,
         MainMenu,
-        GameOver
+        GameOver,
+        Credits
+
     }
 
     [Export]
@@ -17,6 +19,8 @@ public partial class UserInterface : Control
     public Control MainMenuView { get; set; }
     [Export]
     public Control GameOverView { get; set; }
+    [Export]
+    public Control CreditsView { get; set; }
 
     [Export]
     public Label GameOverScoreboard { get; set; }
@@ -51,6 +55,8 @@ public partial class UserInterface : Control
                 MainMenuView.ProcessMode = ProcessModeEnum.Disabled;
                 GameOverView.Visible = false;
                 GameOverView.ProcessMode = ProcessModeEnum.Disabled;
+                CreditsView.Visible = false;
+                CreditsView.ProcessMode = ProcessModeEnum.Disabled;
                 break;
             case UIView.MainMenu:
                 IngameView.Visible = false;
@@ -58,6 +64,8 @@ public partial class UserInterface : Control
                 MainMenuView.ProcessMode = ProcessModeEnum.Always;
                 GameOverView.Visible = false;
                 GameOverView.ProcessMode = ProcessModeEnum.Disabled;
+                CreditsView.Visible = false;
+                CreditsView.ProcessMode = ProcessModeEnum.Disabled;
                 break;
             case UIView.GameOver:
                 IngameView.Visible = false;
@@ -65,13 +73,18 @@ public partial class UserInterface : Control
                 MainMenuView.ProcessMode = ProcessModeEnum.Disabled;
                 GameOverView.Visible = true;
                 GameOverView.ProcessMode = ProcessModeEnum.Always;
-
-                var btn = FindChild("ButtonMainMenu", true) as Button;
-                GD.Print($"btn.Visible = {btn.Visible}");
-                GD.Print($"btn.ProcessMode = {btn.ProcessMode}");
-                GD.Print($"btn.CanProcess() = {btn.CanProcess()}");
+                CreditsView.Visible = false;
+                CreditsView.ProcessMode = ProcessModeEnum.Disabled;
                 break;
-
+            case UIView.Credits:
+                IngameView.Visible = false;
+                MainMenuView.Visible = false;
+                MainMenuView.ProcessMode = ProcessModeEnum.Disabled;
+                GameOverView.Visible = false;
+                GameOverView.ProcessMode = ProcessModeEnum.Disabled;
+                CreditsView.Visible = true;
+                CreditsView.ProcessMode = ProcessModeEnum.Always;
+                break;
         }
     }
 
