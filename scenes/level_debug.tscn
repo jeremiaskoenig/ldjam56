@@ -1,9 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://b80a67vbtqrkh"]
+[gd_scene load_steps=9 format=3 uid="uid://b80a67vbtqrkh"]
 
 [ext_resource type="Texture2D" uid="uid://82lrc0yt32l3" path="res://textures/checker.png" id="1_1til4"]
 [ext_resource type="PackedScene" uid="uid://dpk7cc8du4ept" path="res://scenes/building.tscn" id="2_3tm3r"]
-[ext_resource type="PackedScene" uid="uid://dpf1en0mrhvtg" path="res://scenes/rubble_large.tscn" id="3_4fpg6"]
-[ext_resource type="PackedScene" uid="uid://fc44t6dj6wcg" path="res://Meshlibrary/Commercial_city_kit/large_buildingA.glb" id="3_oob65"]
 [ext_resource type="PackedScene" uid="uid://ch2d2b4j81t5g" path="res://scenes/spawner.tscn" id="4_iqeav"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijelu"]
@@ -833,42 +831,22 @@ shape = SubResource("BoxShape3D_q4r80")
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 23.1503, -1.90735e-06, 24.8347)
 SpawnCount = 8
 HitboxOffset = Vector3(0, 0.5, -0.043)
-Collider = NodePath("@CollisionShape3D@84740")
+Collider = NodePath("@CollisionShape3D@17493")
 
 [node name="Building2" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("2_3tm3r")]
 transform = Transform3D(-1.48534, 0, 3.71399, 0, 4, 0, -3.71399, 0, -1.48534, -1.61503, -1.90735e-06, 26.3392)
 SpawnCount = 7
-Collider = NodePath("@CollisionShape3D@84746")
+Collider = NodePath("@CollisionShape3D@17494")
 
 [node name="Building3" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("2_3tm3r")]
 transform = Transform3D(-1.30036, 0, -3.78273, 0, 4, 0, 3.78273, 0, -1.30036, 0.473667, -3.8147e-06, -13.7752)
 SpawnCount = 11
-Collider = NodePath("@CollisionShape3D@84747")
+Collider = NodePath("@CollisionShape3D@17495")
 
 [node name="Building4" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("2_3tm3r")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 18.6479, -3.8147e-06, -10.3263)
 SpawnCount = 6
-Collider = NodePath("@CollisionShape3D@84748")
-
-[node name="Building5" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("2_3tm3r")]
-transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 9.56368, -3.8147e-06, -17.0714)
-SpawnCount = 30
-Rubble = ExtResource("3_4fpg6")
-BuildingVisual = ExtResource("3_oob65")
-BuildingOffset = Vector3(0, 0, 0)
-HitboxSize = Vector3(2, 3.3, 1.2)
-HitboxOffset = Vector3(0, 0, 0)
-Collider = NodePath("@CollisionShape3D@84745")
-
-[node name="Building6" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("2_3tm3r")]
-transform = Transform3D(2.69716, 0, -2.95387, 0, 4, 0, 2.95387, 0, 2.69716, 28.1362, -3.8147e-06, -16.3016)
-SpawnCount = 50
-Rubble = ExtResource("3_4fpg6")
-BuildingVisual = ExtResource("3_oob65")
-BuildingOffset = Vector3(0, 0, 0)
-HitboxSize = Vector3(2, 3.3, 1.2)
-HitboxOffset = Vector3(0, 0, 0)
-Collider = NodePath("@CollisionShape3D@89026")
+Collider = NodePath("@CollisionShape3D@17496")
 
 [node name="Spawners" type="Node3D" parent="."]
 
