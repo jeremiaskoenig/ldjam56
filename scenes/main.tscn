@@ -8,6 +8,7 @@
 [node name="Main" type="Node3D" node_paths=PackedStringArray("GameContainer")]
 script = ExtResource("1_mha4a")
 GameContainer = NodePath("InGame")
+RoundLength = 180
 Level = ExtResource("2_wuw75")
 PlayerSpawn = Vector3(3, 1, 10)
 
