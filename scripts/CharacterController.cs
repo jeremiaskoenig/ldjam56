@@ -3,10 +3,10 @@ using System;
 
 public partial class CharacterController : CharacterBody3D
 {
-    public static CharacterController Instance { get; private set; }
+	public static CharacterController Instance { get; private set; }
 
-    private const string CreaturePrefix = "Creature";
-    private const string BuildingPrefix = "Building";
+	private const string CreaturePrefix = "Creature";
+	private const string BuildingPrefix = "Building";
 
 	[Export]
 	public float MoveSpeed { get; set; } = 50f;
@@ -14,13 +14,13 @@ public partial class CharacterController : CharacterBody3D
 	[Export]
 	public float TurnSpeed { get; set; } = 0.5f;
 
-    public override void _Ready()
-    {
-        if (Instance == null)
-            Instance = this;
-        else
-            GD.PrintErr($"Duplicate CharacterController. Source: {Name}");
-    }
+	public override void _Ready()
+	{
+		if (Instance == null)
+			Instance = this;
+		else
+			GD.PrintErr($"Duplicate CharacterController. Source: {Name}");
+	}
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -48,23 +48,23 @@ public partial class CharacterController : CharacterBody3D
 			RotateY(-TurnSpeed);
 		}
 
-        Velocity = velocity;
-        if (MoveAndSlide())
-        {
-            for (int i = 0; i < GetSlideCollisionCount(); i++)
-            {
-                var collision = GetSlideCollision(i);
-                var node = (Node3D)collision.GetCollider();
-                switch (node)
-                {
-                    case Building building:
-                        building.Spawn();
-                        break;
-                    case Creature creature:
-                        creature.Splat();
-                        break;
-                }
-            }
-        }
-    }
+		Velocity = velocity;
+		if (MoveAndSlide())
+		{
+			for (int i = 0; i < GetSlideCollisionCount(); i++)
+			{
+				var collision = GetSlideCollision(i);
+				var node = (Node3D)collision.GetCollider();
+				switch (node)
+				{
+					case Building building:
+						building.Spawn();
+						break;
+					case Creature creature:
+						creature.Splat();
+						break;
+				}
+			}
+		}
+	}
 }
