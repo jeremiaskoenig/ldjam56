@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 [gd_scene load_steps=6 format=3 uid="uid://dpk7cc8du4ept"]
-=======
-[gd_scene load_steps=7 format=3 uid="uid://dp8dasl15mocy"]
->>>>>>> 18933160d790c2b2619995a799d0474ca531bbdf
 
 [ext_resource type="Script" path="res://scripts/Building.cs" id="1_khay0"]
 [ext_resource type="PackedScene" uid="uid://bdi21re6j7erc" path="res://models/house_type01.fbx" id="2_d7fh0"]
