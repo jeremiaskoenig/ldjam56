@@ -1,7 +1,7 @@
-[gd_scene load_steps=10 format=3 uid="uid://b80a67vbtqrkh"]
+[gd_scene load_steps=10 format=3 uid="uid://bciin2khasmnp"]
 
 [ext_resource type="Texture2D" uid="uid://82lrc0yt32l3" path="res://textures/checker.png" id="1_1til4"]
-[ext_resource type="PackedScene" uid="uid://dpk7cc8du4ept" path="res://scenes/building.tscn" id="2_3tm3r"]
+[ext_resource type="PackedScene" uid="uid://dp8dasl15mocy" path="res://scenes/building.tscn" id="2_3tm3r"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijelu"]
 albedo_texture = ExtResource("1_1til4")

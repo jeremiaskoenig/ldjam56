@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://clem36i6dobsp"
+path="res://.godot/imported/detail_overhang.obj-4d25f9e2aff3eab8b4b1ea81e96cf796.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail_overhang.obj-4d25f9e2aff3eab8b4b1ea81e96cf796.mesh"]
+
+source_file="res://Objects/KenneyCommercialCity/detail_overhang.obj"
+dest_files=["res://.godot/imported/detail_overhang.obj-4d25f9e2aff3eab8b4b1ea81e96cf796.mesh", "res://.godot/imported/detail_overhang.obj-4d25f9e2aff3eab8b4b1ea81e96cf796.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
