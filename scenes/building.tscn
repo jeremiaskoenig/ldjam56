@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpk7cc8du4ept"]
+
+[ext_resource type="Script" path="res://scripts/Building.cs" id="1_khay0"]
+[ext_resource type="PackedScene" uid="uid://bdi21re6j7erc" path="res://models/house_type01.fbx" id="2_d7fh0"]
+[ext_resource type="PackedScene" uid="uid://cq3aitjm8x6xy" path="res://scenes/character_creature.tscn" id="2_iyf50"]
+[ext_resource type="PackedScene" uid="uid://cphypup3oeu52" path="res://scenes/explosion.tscn" id="3_kae3r"]
+[ext_resource type="PackedScene" uid="uid://bnndl2nnbv2r7" path="res://scenes/rubble.tscn" id="4_ym5so"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3qf0"]
+size = Vector3(1.21013, 0.678802, 0.806366)
+
+[node name="Building" type="StaticBody3D"]
+script = ExtResource("1_khay0")
+SpawnCount = 5
+SpawnedCreature = ExtResource("2_iyf50")
+Explosion = ExtResource("3_kae3r")
+Rubble = ExtResource("4_ym5so")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00127411, 0.385849, -0.0417023)
+shape = SubResource("BoxShape3D_e3qf0")
+
+[node name="house_type01" parent="." instance=ExtResource("2_d7fh0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.65, 0, -0.5)

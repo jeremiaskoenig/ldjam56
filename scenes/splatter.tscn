@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwyacxvlkwmxk"]
+
+[ext_resource type="Script" path="res://scripts/Splatter.cs" id="1_gu3or"]
+[ext_resource type="Texture2D" uid="uid://lkrg0xiug3ox" path="res://textures/splat.png" id="1_m0l8o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7asui"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("1_m0l8o")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xtowg"]
+
+[node name="Splatter" type="Node3D"]
+script = ExtResource("1_gu3or")
+
+[node name="Quad" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_7asui")
+mesh = SubResource("QuadMesh_xtowg")
