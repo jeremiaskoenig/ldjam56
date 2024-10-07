@@ -13,9 +13,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4888, -9.53674e-07, 3.6870
 
 [node name="Level" parent="." instance=ExtResource("2_wglar")]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.863369, 0.418044, -0.282548, 0, 0.559974, 0.82851, 0.504573, -0.71531, 0.483464, 0, 0, 0)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_mpr8a")]
