@@ -1,24 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://r6e1uol2f521"]
 
-[ext_resource type="PackedScene" uid="uid://dfmtohlg7o3gc" path="res://scenes/character_player.tscn" id="1_igbum"]
 [ext_resource type="Script" path="res://scripts/GameState.cs" id="1_mha4a"]
-[ext_resource type="PackedScene" uid="uid://cby2hnihx8vqh" path="res://scenes/level_00.tscn" id="4_h0k8k"]
-[ext_resource type="PackedScene" uid="uid://dti8i04eftgxl" path="res://scenes/ui.tscn" id="4_mpr8a"]
+[ext_resource type="PackedScene" uid="uid://cby2hnihx8vqh" path="res://scenes/level_00.tscn" id="2_wuw75"]
+[ext_resource type="PackedScene" uid="uid://dfmtohlg7o3gc" path="res://scenes/character_player.tscn" id="3_obfsd"]
+[ext_resource type="PackedScene" uid="uid://dti8i04eftgxl" path="res://scenes/ui.tscn" id="4_caa41"]
 
 [node name="Main" type="Node3D" node_paths=PackedStringArray("GameContainer")]
 script = ExtResource("1_mha4a")
 GameContainer = NodePath("InGame")
-RoundLength = 10
-Level = ExtResource("2_wglar")
-PlayerSpawn = Vector3(13.5, 0, 3.6)
+Level = ExtResource("2_wuw75")
+PlayerSpawn = Vector3(3, 1, 10)
 
 [node name="InGame" type="Node3D" parent="."]
 
-[node name="Player" parent="InGame" instance=ExtResource("1_igbum")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 0, 3.6)
+[node name="Player" parent="InGame" instance=ExtResource("3_obfsd")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="UI" parent="CanvasLayer" instance=ExtResource("4_mpr8a")]
-
-[node name="World" parent="." instance=ExtResource("4_h0k8k")]
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_caa41")]
