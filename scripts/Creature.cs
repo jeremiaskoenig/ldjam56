@@ -29,13 +29,6 @@ public partial class Creature : CharacterBody3D
             characterSelected = true;
             logY = true;
         }
-
-        var animPlayer = GetNode<AnimationPlayer>("character-male-a/AnimationPlayer");
-        animPlayer.AnimationFinished += (a) => animPlayer.Play("walk");
-        if (animPlayer != null)
-            animPlayer.Play("walk");
-        else
-            GD.Print("anim-player null");
     }
 
     public override void _PhysicsProcess(double delta)
