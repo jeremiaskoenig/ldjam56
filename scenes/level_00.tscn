@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://cby2hnihx8vqh"]
+[gd_scene load_steps=33 format=3 uid="uid://cby2hnihx8vqh"]
 
 [ext_resource type="PackedScene" uid="uid://cdq5i00lxde6m" path="res://Meshlibrary/statue_obelisk.glb" id="1_omxd6"]
 [ext_resource type="MeshLibrary" uid="uid://d3tk15a7agyag" path="res://Assets/KenneyNatureKit.tres" id="1_y8sj7"]
@@ -8,6 +8,14 @@
 [ext_resource type="PackedScene" uid="uid://dg4ku0ibp68ar" path="res://Meshlibrary/log_large.glb" id="4_ayigd"]
 [ext_resource type="PackedScene" uid="uid://bcnjt6hg17ly2" path="res://Meshlibrary/log_stack.glb" id="5_pqio6"]
 [ext_resource type="PackedScene" uid="uid://c57hkindudxf3" path="res://Meshlibrary/log_stackLarge.glb" id="6_1q3bb"]
+[ext_resource type="PackedScene" uid="uid://dpk7cc8du4ept" path="res://scenes/building.tscn" id="9_ytpgo"]
+[ext_resource type="PackedScene" uid="uid://dyjw4hoja7n5l" path="res://Objects/KenneyCommercialCityFBX/skyscraperD.fbx" id="10_7w2es"]
+[ext_resource type="PackedScene" uid="uid://b16pad0gclfv1" path="res://Objects/KenneyCommercialCityFBX/large_buildingF.fbx" id="11_43pvl"]
+[ext_resource type="PackedScene" uid="uid://chdphj3v8fmte" path="res://Objects/KenneyCommercialCityFBX/wall_doorA.fbx" id="12_7t8d3"]
+[ext_resource type="PackedScene" uid="uid://bef6q8xixa2g" path="res://Objects/KenneyCommercialCityFBX/large_buildingD.fbx" id="12_j28rg"]
+[ext_resource type="PackedScene" uid="uid://cdav046n5kbd7" path="res://Objects/KenneyCommercialCityFBX/large_buildingE.fbx" id="13_bon3d"]
+[ext_resource type="PackedScene" uid="uid://pai2i1ramqjo" path="res://Objects/KenneyCommercialCityFBX/large_buildingB.fbx" id="14_x0ge8"]
+[ext_resource type="PackedScene" uid="uid://c2v28ll3en1da" path="res://Objects/KenneyCommercialCityFBX/skyscraperC.fbx" id="15_kn0d0"]
 
 [sub_resource type="Environment" id="Environment_2krq5"]
 
@@ -274,6 +282,1494 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 177.812, 0.527151, 171.614)
 transform = Transform3D(-0.998063, 0.0531551, -0.0323245, 0.0531273, 0.998586, 0.00172065, 0.0323703, 0, -0.999476, 23.4197, 0.473337, 148.887)
 
 [node name="Spawner" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Spawner" parent="Spawner" instance=ExtResource("2_qgln0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.692, 0.995491, 19.2078)
+
+[node name="Spawner2" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.2369, 0.995491, 81.223)
+
+[node name="Spawner3" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.8268, 0.995491, 81.223)
+
+[node name="Spawner4" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.8268, 0.995491, 129.741)
+
+[node name="Spawner5" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 133.216, 0.995491, 118.193)
+
+[node name="Spawner6" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.761, 0.995491, 64.3214)
+
+[node name="Spawner7" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 103.837, 0.995491, 31.422)
+
+[node name="Spawner8" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89.0741, 0.995491, 172.756)
+
+[node name="Spawner9" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.8268, 0.995491, 222.904)
+
+[node name="Spawner10" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 166.876, 0.995491, 144.279)
+
+[node name="Spawner11" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149.565, 0.995491, 214.44)
+
+[node name="Spawner12" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156.72, 0.995491, 30.6723)
+
+[node name="Spawner13" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 161.275, 0.995491, 72.8214)
+
+[node name="Spawner14" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.2668, 0.995491, 175.107)
+
+[node name="Spawner15" parent="Spawner" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 170.777, 0.995491, 180.152)
+
+[node name="Buildings" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="NormiHome1" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 3.77995, 0.500978, 18.7827)
+Collider = NodePath("@CollisionShape3D@62873")
+
+[node name="Skyscrapscrap1" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 76.2682, 0.500978, 10.0295)
+SpawnCount = 50
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62874")
+
+[node name="CityNH1" type="Node3D" parent="Buildings"]
+
+[node name="NormiHome2" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@62875")
+
+[node name="NormiHome3" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@62876")
+
+[node name="NormiHome4" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@62877")
+
+[node name="NormiHome5" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@62878")
+
+[node name="NormiHome6" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@62879")
+
+[node name="NormiHome7" parent="Buildings/CityNH1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@62880")
+
+[node name="Spawner" parent="Buildings/CityNH1" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CitySky1" type="Node3D" parent="Buildings"]
+
+[node name="LargeBuildF1" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62881")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62882")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62883")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62884")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62885")
+
+[node name="Skyscrap2" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62886")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62887")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky1" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62888")
+
+[node name="Spawner" parent="Buildings/CitySky1" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="WallDoor" parent="Buildings" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 16.8574, 0.000997722, 20.8436)
+SpawnCount = 25
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("12_7t8d3")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.285, 1, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@62889")
+
+[node name="CityNH2" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.3845, 0, -104.016)
+
+[node name="NormiHome2" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@65351")
+
+[node name="NormiHome3" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@65352")
+
+[node name="NormiHome4" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@65353")
+
+[node name="NormiHome5" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@65354")
+
+[node name="NormiHome6" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@65355")
+
+[node name="NormiHome7" parent="Buildings/CityNH2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@65356")
+
+[node name="Spawner" parent="Buildings/CityNH2" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH3" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135.857, 0, -63.4092)
+
+[node name="NormiHome2" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@65666")
+
+[node name="NormiHome3" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@65667")
+
+[node name="NormiHome4" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@65668")
+
+[node name="NormiHome5" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@65669")
+
+[node name="NormiHome6" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@65670")
+
+[node name="NormiHome7" parent="Buildings/CityNH3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@65671")
+
+[node name="Spawner" parent="Buildings/CityNH3" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CitySky2" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.2557, 0, -97.0641)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66200")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66202")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66204")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66206")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66208")
+
+[node name="Skyscrap2" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66210")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66212")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky2" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66214")
+
+[node name="Spawner" parent="Buildings/CitySky2" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CitySky3" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.8722, 0, 123.972)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66552")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66554")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66556")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66558")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66560")
+
+[node name="Skyscrap2" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66562")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66564")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky3" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@66566")
+
+[node name="Spawner" parent="Buildings/CitySky3" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CityNH4" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.8747, 0, 81.0384)
+
+[node name="NormiHome2" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@67186")
+
+[node name="NormiHome3" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@67187")
+
+[node name="NormiHome4" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@67188")
+
+[node name="NormiHome5" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@67189")
+
+[node name="NormiHome6" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@67190")
+
+[node name="NormiHome7" parent="Buildings/CityNH4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@67191")
+
+[node name="Spawner" parent="Buildings/CityNH4" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH5" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.9177, 0, -17.2098)
+
+[node name="NormiHome2" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@68041")
+
+[node name="NormiHome3" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@68042")
+
+[node name="NormiHome4" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@68043")
+
+[node name="NormiHome5" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@68044")
+
+[node name="NormiHome6" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@68045")
+
+[node name="NormiHome7" parent="Buildings/CityNH5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@68046")
+
+[node name="Spawner" parent="Buildings/CityNH5" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CitySky4" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.34901, 7.20942, 154.832)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68578")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68580")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68582")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68584")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68586")
+
+[node name="Skyscrap2" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68588")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68590")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky4" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@68592")
+
+[node name="CitySky5" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.7829, 0, 48.3079)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69287")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69289")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69291")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69293")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69295")
+
+[node name="Skyscrap2" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69297")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69299")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky5" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69301")
+
+[node name="Spawner" parent="Buildings/CitySky5" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CitySky6" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -58.0521, 0, 96.8566)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69642")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69644")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69646")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69648")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69650")
+
+[node name="Skyscrap2" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69652")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69654")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@69656")
+
+[node name="Spawner" parent="Buildings/CitySky6" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CityNH6" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.16494, 0, 117.225)
+
+[node name="NormiHome2" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@70129")
+
+[node name="NormiHome3" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@70130")
+
+[node name="NormiHome4" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@70131")
+
+[node name="NormiHome5" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@70132")
+
+[node name="NormiHome6" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@70133")
+
+[node name="NormiHome7" parent="Buildings/CityNH6" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@70134")
+
+[node name="Spawner" parent="Buildings/CityNH6" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH7" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.63649, 0, 117.225)
+
+[node name="NormiHome2" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@70465")
+
+[node name="NormiHome3" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@70466")
+
+[node name="NormiHome4" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@70467")
+
+[node name="NormiHome5" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@70468")
+
+[node name="NormiHome6" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@70469")
+
+[node name="NormiHome7" parent="Buildings/CityNH7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@70470")
+
+[node name="Spawner" parent="Buildings/CityNH7" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH8" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.16494, 0, 108.539)
+
+[node name="NormiHome2" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@71095")
+
+[node name="NormiHome3" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@71096")
+
+[node name="NormiHome4" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@71097")
+
+[node name="NormiHome5" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@71098")
+
+[node name="NormiHome6" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@71099")
+
+[node name="NormiHome7" parent="Buildings/CityNH8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@71100")
+
+[node name="Spawner" parent="Buildings/CityNH8" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH9" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93.6236, 0, 117.225)
+
+[node name="NormiHome2" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@71410")
+
+[node name="NormiHome3" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@71411")
+
+[node name="NormiHome4" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@71412")
+
+[node name="NormiHome5" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@71413")
+
+[node name="NormiHome6" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@71414")
+
+[node name="NormiHome7" parent="Buildings/CityNH9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@71415")
+
+[node name="Spawner" parent="Buildings/CityNH9" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH10" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 106.261, 0, 64.9241)
+
+[node name="NormiHome2" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@71722")
+
+[node name="NormiHome3" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@71723")
+
+[node name="NormiHome4" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@71724")
+
+[node name="NormiHome5" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@71725")
+
+[node name="NormiHome6" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@71726")
+
+[node name="NormiHome7" parent="Buildings/CityNH10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@71727")
+
+[node name="Spawner" parent="Buildings/CityNH10" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH11" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.6368, 0, 47.5448)
+
+[node name="NormiHome2" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@72037")
+
+[node name="NormiHome3" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@72038")
+
+[node name="NormiHome4" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@72039")
+
+[node name="NormiHome5" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@72040")
+
+[node name="NormiHome6" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@72041")
+
+[node name="NormiHome7" parent="Buildings/CityNH11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@72042")
+
+[node name="Spawner" parent="Buildings/CityNH11" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CitySky7" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.7968, 0, 27.6359)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72766")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72768")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72770")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72772")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72774")
+
+[node name="Skyscrap2" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72776")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72778")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky7" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@72780")
+
+[node name="Spawner" parent="Buildings/CitySky7" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CitySky8" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.9243, 0, 101.099)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73121")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73123")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73125")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73127")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73129")
+
+[node name="Skyscrap2" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73131")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73133")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky8" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73135")
+
+[node name="Spawner" parent="Buildings/CitySky8" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CitySky9" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -49.2314)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73476")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73478")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73480")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73482")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73484")
+
+[node name="Skyscrap2" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73486")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73488")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky9" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73490")
+
+[node name="Spawner" parent="Buildings/CitySky9" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CitySky10" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78.6561, 0, -78.9825)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73831")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73833")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73835")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73837")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73839")
+
+[node name="Skyscrap2" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73841")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73843")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky10" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@73845")
+
+[node name="Spawner" parent="Buildings/CitySky10" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CityNH12" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0586, 0, -63.3435)
+
+[node name="NormiHome2" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@74315")
+
+[node name="NormiHome3" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@74316")
+
+[node name="NormiHome4" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@74317")
+
+[node name="NormiHome5" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@74318")
+
+[node name="NormiHome6" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@74319")
+
+[node name="NormiHome7" parent="Buildings/CityNH12" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@74320")
+
+[node name="Spawner" parent="Buildings/CityNH12" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH13" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.631, 0, -63.3435)
+
+[node name="NormiHome2" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@74645")
+
+[node name="NormiHome3" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@74646")
+
+[node name="NormiHome4" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@74647")
+
+[node name="NormiHome5" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@74648")
+
+[node name="NormiHome6" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@74649")
+
+[node name="NormiHome7" parent="Buildings/CityNH13" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@74650")
+
+[node name="Spawner" parent="Buildings/CityNH13" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH14" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 95.1381, 0, -95.3233)
+
+[node name="NormiHome2" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@74960")
+
+[node name="NormiHome3" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@74961")
+
+[node name="NormiHome4" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@74962")
+
+[node name="NormiHome5" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@74963")
+
+[node name="NormiHome6" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@74964")
+
+[node name="NormiHome7" parent="Buildings/CityNH14" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@74965")
+
+[node name="Spawner" parent="Buildings/CityNH14" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CityNH15" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.515, 0, -19.9086)
+
+[node name="NormiHome2" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@75275")
+
+[node name="NormiHome3" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@75276")
+
+[node name="NormiHome4" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@75277")
+
+[node name="NormiHome5" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@75278")
+
+[node name="NormiHome6" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@75279")
+
+[node name="NormiHome7" parent="Buildings/CityNH15" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@75280")
+
+[node name="Spawner" parent="Buildings/CityNH15" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.274, 0, 119.23)
+
+[node name="CitySky11" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.785, 0, -7.5564)
+
+[node name="LargeBuildF1" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.718, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75956")
+
+[node name="Skyscrapscrap2" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.99769, 0, 0.0679283, 0, 1, 0, -0.0679283, 0, -0.99769, 112.039, 0, 107.986)
+SpawnCount = 75
+BuildingScoreValue = 30
+BuildingVisual = ExtResource("10_7w2es")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.25, 10.95, 1.445)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75958")
+
+[node name="LargeBuildD1" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 107.075, 0, 107.986)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("12_j28rg")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.385, 3.29, 1.255)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75960")
+
+[node name="LargeBuildE1" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 107.075, 0, 110.912)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("13_bon3d")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(1.225, 4.18, 1.29)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75962")
+
+[node name="LargeBuildB1" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 112.008, 0, 110.747)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("14_x0ge8")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(0.785, 3.39, 0.8)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75964")
+
+[node name="Skyscrap2" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 109.541, 0, 115.323)
+SpawnCount = 50
+BuildingScoreValue = 25
+BuildingVisual = ExtResource("15_kn0d0")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75966")
+
+[node name="LargeBuildF2" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 111.379, 0, 113.078)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75968")
+
+[node name="LargeBuildF3" parent="Buildings/CitySky11" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 107.624, 0, 112.884)
+SpawnCount = 15
+BuildingScoreValue = 10
+BuildingVisual = ExtResource("11_43pvl")
+BuildingOffset = Vector3(0, 0, 0)
+HitboxSize = Vector3(2, 2.96, 1.035)
+HitboxOffset = Vector3(0, 0, 0)
+Collider = NodePath("@CollisionShape3D@75970")
+
+[node name="Spawner" parent="Buildings/CitySky11" instance=ExtResource("2_qgln0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 109.74, 0, 110.653)
+
+[node name="CityNH16" type="Node3D" parent="Buildings"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.32751, 7.05733, 146.125)
+
+[node name="NormiHome2" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 32.071, 0, 121.493)
+Collider = NodePath("@CollisionShape3D@86805")
+
+[node name="NormiHome3" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 31.295, 0, 118.985)
+Collider = NodePath("@CollisionShape3D@86806")
+
+[node name="NormiHome4" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, -0.707107, 32.0708, 0, 116.639)
+Collider = NodePath("@CollisionShape3D@86807")
+
+[node name="NormiHome5" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 36.6008, 0, 122.269)
+Collider = NodePath("@CollisionShape3D@86808")
+
+[node name="NormiHome6" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 37.3419, 0, 119.312)
+Collider = NodePath("@CollisionShape3D@86809")
+
+[node name="NormiHome7" parent="Buildings/CityNH16" node_paths=PackedStringArray("Collider") instance=ExtResource("9_ytpgo")]
+transform = Transform3D(0.707674, 0, -0.706539, 0, 1, 0, 0.706539, 0, 0.707674, 36.6598, 0, 116.634)
+Collider = NodePath("@CollisionShape3D@86810")
