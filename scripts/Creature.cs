@@ -67,7 +67,7 @@ public partial class Creature : CharacterBody3D
         collided = MoveAndSlide();
 
         // Fix position because MoveAndSlide can move vertically (which we don't want)
-        GlobalPosition *= new Vector3(1, 0, 1);
+        Position *= new Vector3(1, 0, 1);
 
         Vector3? scarePoint = null;
 

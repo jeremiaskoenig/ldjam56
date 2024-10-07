@@ -1,12 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://cq3aitjm8x6xy"]
+[gd_scene load_steps=8 format=3 uid="uid://cq3aitjm8x6xy"]
 
-[ext_resource type="PackedScene" uid="uid://ckc1pi61d5tcv" path="res://models/character-male-a.fbx" id="1_32yo1"]
 [ext_resource type="Script" path="res://scripts/Creature.cs" id="1_g72hc"]
 [ext_resource type="PackedScene" uid="uid://cwyacxvlkwmxk" path="res://scenes/splatter.tscn" id="2_8ijvk"]
+[ext_resource type="Script" path="res://scripts/AnimateUV.cs" id="5_8d3hg"]
+[ext_resource type="Texture2D" uid="uid://bropc40qhtdyu" path="res://textures/character.png" id="6_45u3l"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jtfa0"]
 radius = 0.2
 height = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_758pi"]
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("6_45u3l")
+uv1_scale = Vector3(0.25, 1, 1)
+billboard_mode = 2
+billboard_keep_scale = true
+
+[sub_resource type="QuadMesh" id="QuadMesh_t4tps"]
 
 [node name="Creature" type="CharacterBody3D"]
 script = ExtResource("1_g72hc")
@@ -16,5 +27,11 @@ Splatter = ExtResource("2_8ijvk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("CapsuleShape3D_jtfa0")
 
-[node name="character-male-a" parent="." instance=ExtResource("1_32yo1")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 0.5, 0, 0.473428, 0)
+material_override = SubResource("StandardMaterial3D_758pi")
+mesh = SubResource("QuadMesh_t4tps")
+script = ExtResource("5_8d3hg")
+FrameLength = 0.25
+UVOffsets = PackedVector2Array(0, 0, 0.25, 0, 0.5, 0, 0.75, 0)
+AnimatedMaterial = SubResource("StandardMaterial3D_758pi")

@@ -19,8 +19,7 @@ public partial class Spawner : Node3D
         if (IsQueuedForDeletion())
             return;
 
-        var parentNode = GetParent(); 
-        GD.Print(parentNode.Name);
+        var parentNode = GetParent();
         for (int i = 0; i < SpawnCount; i++)
         {
             var creature = SpawnedCreature.Instantiate<Node3D>();

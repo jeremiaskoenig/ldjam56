@@ -5,13 +5,17 @@
 [ext_resource type="PackedScene" uid="uid://b80a67vbtqrkh" path="res://scenes/level_debug.tscn" id="2_wglar"]
 [ext_resource type="PackedScene" uid="uid://dti8i04eftgxl" path="res://scenes/ui.tscn" id="4_mpr8a"]
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" node_paths=PackedStringArray("GameContainer")]
 script = ExtResource("1_mha4a")
+GameContainer = NodePath("InGame")
+RoundLength = 10
+Level = ExtResource("2_wglar")
+PlayerSpawn = Vector3(13.5, 0, 3.6)
 
-[node name="Player" parent="." instance=ExtResource("1_igbum")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4888, -9.53674e-07, 3.68709)
+[node name="InGame" type="Node3D" parent="."]
 
-[node name="Level" parent="." instance=ExtResource("2_wglar")]
+[node name="Player" parent="InGame" instance=ExtResource("1_igbum")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 0, 3.6)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

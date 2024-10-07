@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/Building.cs" id="1_khay0"]
 [ext_resource type="PackedScene" uid="uid://bdi21re6j7erc" path="res://models/house_type01.fbx" id="2_d7fh0"]
-[ext_resource type="PackedScene" path="res://scenes/character_creature.tscn" id="2_iyf50"]
-[ext_resource type="PackedScene" path="res://scenes/explosion.tscn" id="3_kae3r"]
-[ext_resource type="PackedScene" path="res://scenes/rubble.tscn" id="4_ym5so"]
+[ext_resource type="PackedScene" uid="uid://cq3aitjm8x6xy" path="res://scenes/character_creature.tscn" id="2_iyf50"]
+[ext_resource type="PackedScene" uid="uid://cphypup3oeu52" path="res://scenes/explosion.tscn" id="3_kae3r"]
+[ext_resource type="PackedScene" uid="uid://bnndl2nnbv2r7" path="res://scenes/rubble.tscn" id="4_ym5so"]
 
 [node name="Building" type="StaticBody3D" node_paths=PackedStringArray("Collider")]
 script = ExtResource("1_khay0")
@@ -16,4 +16,4 @@ BuildingVisual = ExtResource("2_d7fh0")
 BuildingOffset = Vector3(0.65, 0, -0.5)
 HitboxSize = Vector3(1.2, 1, 0.8)
 HitboxOffset = Vector3(0, 0.45, -0.043)
-Collider = NodePath("")
+Collider = NodePath("@CollisionShape3D@160572")

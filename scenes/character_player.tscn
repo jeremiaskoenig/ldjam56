@@ -1,15 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dfmtohlg7o3gc"]
+[gd_scene load_steps=6 format=3 uid="uid://dfmtohlg7o3gc"]
 
 [ext_resource type="Script" path="res://scripts/CharacterController.cs" id="1_wbgj5"]
 [ext_resource type="Material" uid="uid://hodnx2a5rgx8" path="res://materials/dino_walk.tres" id="2_yvaxi"]
 [ext_resource type="Script" path="res://scripts/AnimateUV.cs" id="3_xkcox"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_lslcx"]
-size = Vector3(0.5, 1, 0.5)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5eg6t"]
-radius = 0.3
-height = 1.0
 
 [sub_resource type="QuadMesh" id="QuadMesh_kof4h"]
 
@@ -21,16 +14,6 @@ radius = 1.5
 script = ExtResource("1_wbgj5")
 MoveSpeed = 10.0
 TurnSpeed = 0.05
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-visible = false
-mesh = SubResource("BoxMesh_lslcx")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-visible = false
-shape = SubResource("CapsuleShape3D_5eg6t")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
 transform = Transform3D(4, 0, 0, 0, 8, 0, 0, 0, 1, 0, 4, 0)

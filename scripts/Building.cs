@@ -12,6 +12,9 @@ public partial class Building : Node3D
     public int SpawnCount { get; set; }
 
     [Export]
+    public int BuildingScoreValue { get; set; } = 15;
+
+    [Export]
     public PackedScene SpawnedCreature { get; set; }
 
     [Export]
@@ -123,6 +126,6 @@ public partial class Building : Node3D
         GetParent().AddChild(rubble);
         rubble.GlobalPosition = GlobalPosition;
         QueueFree();
-        GameState.Instance.AddScore(15);
+        GameState.Instance.AddScore(BuildingScoreValue);
     }
 }
