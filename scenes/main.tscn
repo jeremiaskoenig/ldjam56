@@ -10,7 +10,7 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.56605, 0)
 
 [node name="Creatures" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 6.52099, 15)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3322, 6.52099, 24.2604)
 
 [node name="Creature" parent="Creatures" instance=ExtResource("3_bvapl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
