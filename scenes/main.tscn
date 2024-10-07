@@ -1,136 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://r6e1uol2f521"]
+[gd_scene load_steps=5 format=3 uid="uid://r6e1uol2f521"]
 
 [ext_resource type="PackedScene" uid="uid://dfmtohlg7o3gc" path="res://scenes/character_player.tscn" id="1_igbum"]
+[ext_resource type="Script" path="res://scripts/GameState.cs" id="1_mha4a"]
 [ext_resource type="PackedScene" uid="uid://b80a67vbtqrkh" path="res://scenes/level_debug.tscn" id="2_wglar"]
-[ext_resource type="PackedScene" uid="uid://cq3aitjm8x6xy" path="res://scenes/character_creature.tscn" id="3_bvapl"]
+[ext_resource type="PackedScene" uid="uid://dti8i04eftgxl" path="res://scenes/ui.tscn" id="4_mpr8a"]
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_mha4a")
 
 [node name="Player" parent="." instance=ExtResource("1_igbum")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.4888, -9.53674e-07, 3.68709)
 
 [node name="Level" parent="." instance=ExtResource("2_wglar")]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.863369, 0.418044, -0.282548, 0, 0.559974, 0.82851, 0.504573, -0.71531, 0.483464, 0, 0, 0)
 
-[node name="Creatures" type="Node3D" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Creature" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature2" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature3" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature4" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature5" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature6" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature7" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature8" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature9" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature10" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature11" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature12" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature13" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature14" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature15" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature16" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature17" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature18" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature19" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature20" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature21" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature22" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature23" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature24" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature25" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature26" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature27" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature28" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature29" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature30" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature31" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature32" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature33" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature34" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature35" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature36" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature37" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature38" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature39" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
-
-[node name="Creature40" parent="Creatures" instance=ExtResource("3_bvapl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40817, 0.0265884, -2.12699)
+[node name="UI" parent="CanvasLayer" instance=ExtResource("4_mpr8a")]

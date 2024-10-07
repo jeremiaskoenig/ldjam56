@@ -5,4 +5,4 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-    [assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces", Justification = "Not needed in this small godot project and aligns with the godot code generator.", Scope = "module")]
+[assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces", Justification = "Not needed in this small godot project and aligns with the godot code generator.", Scope = "module")]

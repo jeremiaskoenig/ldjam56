@@ -3,6 +3,8 @@ using System;
 
 public partial class CharacterController : CharacterBody3D
 {
+    public static CharacterController Instance { get; private set; }
+
     private const string CreaturePrefix = "Creature";
     private const string BuildingPrefix = "Building";
 
@@ -14,6 +16,10 @@ public partial class CharacterController : CharacterBody3D
 
     public override void _Ready()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            GD.PrintErr($"Duplicate CharacterController. Source: {Name}");
     }
 
     public override void _PhysicsProcess(double delta)
@@ -45,20 +51,16 @@ public partial class CharacterController : CharacterBody3D
         Velocity = velocity;
         if (MoveAndSlide())
         {
-            GD.Print("Player Collide");
             for (int i = 0; i < GetSlideCollisionCount(); i++)
             {
                 var collision = GetSlideCollision(i);
                 var node = (Node3D)collision.GetCollider();
-                GD.Print($"With {node.Name}");
                 switch (node)
                 {
                     case Building building:
-                        GD.Print("Is Building");
                         building.Spawn();
                         break;
                     case Creature creature:
-                        GD.Print("Is Creature");
                         creature.Splat();
                         break;
                 }

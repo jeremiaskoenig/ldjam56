@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfmtohlg7o3gc"]
+[gd_scene load_steps=8 format=3 uid="uid://dfmtohlg7o3gc"]
 
 [ext_resource type="Script" path="res://scripts/CharacterController.cs" id="1_wbgj5"]
+[ext_resource type="Material" uid="uid://hodnx2a5rgx8" path="res://materials/dino_walk.tres" id="2_yvaxi"]
+[ext_resource type="Script" path="res://scripts/AnimateUV.cs" id="3_xkcox"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_lslcx"]
 size = Vector3(0.5, 1, 0.5)
@@ -9,6 +11,12 @@ size = Vector3(0.5, 1, 0.5)
 radius = 0.3
 height = 1.0
 
+[sub_resource type="QuadMesh" id="QuadMesh_kof4h"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_dqijf"]
+height = 5.0
+radius = 1.5
+
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_wbgj5")
 MoveSpeed = 10.0
@@ -16,11 +24,26 @@ TurnSpeed = 0.05
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+visible = false
 mesh = SubResource("BoxMesh_lslcx")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+visible = false
 shape = SubResource("CapsuleShape3D_5eg6t")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 2, 3)
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 8, 0, 0, 0, 1, 0, 4, 0)
+material_override = ExtResource("2_yvaxi")
+mesh = SubResource("QuadMesh_kof4h")
+script = ExtResource("3_xkcox")
+FrameLength = 0.25
+UVOffsets = PackedVector2Array(0, 0, 0.25, 0, 0.5, 0, 0.75, 0)
+AnimatedMaterial = ExtResource("2_yvaxi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.65, 0)
+shape = SubResource("CylinderShape3D_dqijf")
+
+[node name="Camera3D2" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.91329, 0.40731, 0, -0.40731, 0.91329, 0, 6.61622, 5)
