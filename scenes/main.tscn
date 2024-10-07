@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dfmtohlg7o3gc" path="res://scenes/character_player.tscn" id="1_igbum"]
 [ext_resource type="Script" path="res://scripts/GameState.cs" id="1_mha4a"]
-[ext_resource type="PackedScene" uid="uid://b80a67vbtqrkh" path="res://scenes/level_debug.tscn" id="2_wglar"]
+[ext_resource type="PackedScene" uid="uid://cby2hnihx8vqh" path="res://scenes/level_00.tscn" id="4_h0k8k"]
 [ext_resource type="PackedScene" uid="uid://dti8i04eftgxl" path="res://scenes/ui.tscn" id="4_mpr8a"]
 
 [node name="Main" type="Node3D" node_paths=PackedStringArray("GameContainer")]
@@ -20,3 +20,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5, 0, 3.6)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="UI" parent="CanvasLayer" instance=ExtResource("4_mpr8a")]
+
+[node name="World" parent="." instance=ExtResource("4_h0k8k")]
