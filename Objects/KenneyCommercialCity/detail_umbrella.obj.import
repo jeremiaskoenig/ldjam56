@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://808ema2cw5w2"
+path="res://.godot/imported/detail_umbrella.obj-bc1030b2f2cdd264aabab7321ad7e4df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail_umbrella.obj-bc1030b2f2cdd264aabab7321ad7e4df.mesh"]
+
+source_file="res://Objects/KenneyCommercialCity/detail_umbrella.obj"
+dest_files=["res://.godot/imported/detail_umbrella.obj-bc1030b2f2cdd264aabab7321ad7e4df.mesh", "res://.godot/imported/detail_umbrella.obj-bc1030b2f2cdd264aabab7321ad7e4df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

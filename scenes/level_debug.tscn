@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=11 format=3 uid="uid://b80a67vbtqrkh"]
 
 [ext_resource type="Texture2D" uid="uid://82lrc0yt32l3" path="res://textures/checker.png" id="1_1til4"]
@@ -5,6 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://dpf1en0mrhvtg" path="res://scenes/rubble_large.tscn" id="3_4fpg6"]
 [ext_resource type="PackedScene" uid="uid://fc44t6dj6wcg" path="res://Meshlibrary/Commercial_city_kit/large_buildingA.glb" id="3_oob65"]
 [ext_resource type="PackedScene" uid="uid://ch2d2b4j81t5g" path="res://scenes/spawner.tscn" id="4_iqeav"]
+=======
+[gd_scene load_steps=10 format=3 uid="uid://bciin2khasmnp"]
+
+[ext_resource type="Texture2D" uid="uid://82lrc0yt32l3" path="res://textures/checker.png" id="1_1til4"]
+[ext_resource type="PackedScene" uid="uid://dp8dasl15mocy" path="res://scenes/building.tscn" id="2_3tm3r"]
+>>>>>>> 18933160d790c2b2619995a799d0474ca531bbdf
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijelu"]
 albedo_texture = ExtResource("1_1til4")
